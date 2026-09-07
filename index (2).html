@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloudLens AI</title><style>
+body{margin:0;font-family:Segoe UI,Arial;background:#f7f9fc;color:#1d2939}main{max-width:1050px;margin:auto;padding:55px 24px}
+h1{font-size:52px;color:#17375e;margin:10px 0}h2{color:#17375e;margin-top:42px}.lead{font-size:20px;color:#667085;max-width:800px}
+.badge,.tag{display:inline-block;padding:8px 12px;border-radius:9px;background:#e8f1ff;color:#266bce;font-weight:700;margin:4px}
+.btn{display:inline-block;margin:20px 8px 20px 0;padding:12px 18px;background:#266bce;color:white;text-decoration:none;border-radius:10px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #e1e7ef;border-radius:14px;padding:20px}
+.num{font-size:30px;font-weight:800;color:#e29a32}.final .num{color:#2f9e62}.flow{font-weight:700;color:#17375e;background:white;border:1px solid #e1e7ef;border-radius:12px;padding:18px;margin-top:18px}
+.note{font-size:14px;color:#667085}.ok{background:#edf8f2;border:1px solid #b8e1ca;padding:18px;border-radius:12px}
+footer{margin-top:50px;padding-top:24px;border-top:1px solid #e1e7ef;color:#667085}
+@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:40px}}
+</style></head><body><main>
+<span class="badge">Developer Tools • Android Prototype</span><h1>CloudLens AI</h1>
+<p class="lead"><b>Adaptive Evidence Intelligence for Cloud Incident Diagnosis.</b> CloudLens examines current incident evidence, decides what evidence is worth checking next, and builds an explainable path toward the likely root cause.</p>
+<a class="btn" href="https://github.com/talarisushanth4243-code/CloudLens-AI/raw/refs/heads/main/app-debug.apk">Download Android APK</a>
+<a class="btn" href="https://github.com/talarisushanth4243-code/CloudLens-AI">View GitHub</a>
+<p>TALARI TEAM • TALARI REDDY SUSHANTH • Amrita Vishwa Vidyapeetham, Nagercoil</p>
+
+<h2>Problem</h2><p>Cloud incident evidence can be fragmented across error screens, service status, logs, metrics, alerts, and databases. CloudLens focuses on choosing the next relevant evidence instead of treating every signal as equally useful.</p>
+
+<h2>Adaptive Evidence Loop</h2><div class="grid">
+<div class="card"><div class="num">35%</div><h3>HTTP 502 detected</h3><p>Check whether the backend service is running.</p></div>
+<div class="card"><div class="num">55%</div><h3>Backend running</h3><p>Database connectivity becomes the next useful evidence.</p></div>
+<div class="card final"><div class="num">92%</div><h3>Database timeout</h3><p>Likely root cause: <b>Database Connectivity Failure</b>.</p></div></div>
+<div class="flow">HTTP 502 → Backend RUNNING → Database TIMEOUT → Root Cause</div>
+<p class="note">Confidence values are prototype indicators demonstrating progressive diagnosis, not measured production accuracy.</p>
+
+<h2>Architecture & Technology</h2>
+<div class="grid"><div class="card"><h3>Mobile Layer</h3><p>Android interface and incident evidence screens.</p></div>
+<div class="card"><h3>Decision Layer</h3><p>Adaptive Evidence Engine and next-evidence logic.</p></div>
+<div class="card"><h3>Analysis Layer</h3><p>Evidence chain and explainable root-cause output.</p></div></div>
+<p><span class="tag">Android</span><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Adaptive Evidence Engine</span></p>
+
+<h2>Feasibility</h2><div class="ok"><b>Current prototype:</b> working Android UI, simulated evidence inputs, and adaptive diagnostic flow.<br><b>Next stage:</b> connect live logs/metrics and evaluate evidence selection against a collect-all baseline.</div>
+<footer>CloudLens AI • TALARI TEAM • Developer Tools Prototype</footer>
+</main></body></html>
